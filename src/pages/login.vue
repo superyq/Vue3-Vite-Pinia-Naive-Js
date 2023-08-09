@@ -73,7 +73,7 @@ let handleLogin = () => {
         .login(form)
         .then(() => {
           window.$msg.success("登录成功");
-          router.push({ name: "home" });
+          router.push('/home');
         })
         .catch(() => {
           loginBtnState.value = false;
